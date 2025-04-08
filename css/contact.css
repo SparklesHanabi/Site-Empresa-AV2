@@ -1,0 +1,33 @@
+main {
+    margin: auto;
+    max-width: 500px;
+}
+
+#redes p {
+    font-size: 1.3em;
+}
+
+#contato p {
+    font-size: 1.3em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    font-size: 1em;
+}
+
+#mensagem {
+    opacity: 1;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #0be60b7a;
+    color: #fff;
+    width: 140px;
+    padding: 5px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    box-shadow: 2px 2px rgba(29, 29, 29, 0.575);
+}

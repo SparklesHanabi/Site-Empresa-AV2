@@ -1,30 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITULO SITE CAFETERIA]</title>
-    <!-- Icones -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!-- Conexão ao CSS -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="image/icones/cafe.png" type="image/x-icon">
+    <script src="js/formulario.js"></script>
 </head>
-
 <body>
-     <header>Fale <span>Conosco</span></header>
     <header>
         <a href="index.html" class="logo">[NOME DA CAFETERIA]</a>
 
-        <div class="nav">
+        <nav class="nav">
             <a href="index.html">Início</a>
             <a href="destaque.html">Destaques</a>
             <a href="abtus.html">Sobre Nós</a>
             <a href="news.html">Novidades</a>
             <a href="contact.html">Fale Conosco</a>
-        </div>
+        </nav>
+
+        <main>
+            <section id="redes">
+                <p>Você pode conhecer mais sobre nós em nossas redes sociais:</p>
+                <a href=""><img src="" alt=""></a>
+            </section>
+            <section id="contato">
+                <p>Caso queira que entremos em contato contigo preencha nosso formulário!</p>
+                <form action="" class="formulario">
+                    <label for="inome">Nome:</label>
+                    <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" placeholder="seu@email.com" required>
+                    <label for="inumero">Numero: </label>
+                    <input type="text" name="numero" id="inumero" placeholder="(xx)xxxxx-xxxx"  required>
+                    <input type="submit" value="Enviar">
+                    <div id="mensagem">Enviada com sucesso!</div>
+                </form>
+            </section>
+        </main>
     </header>
-
-
-
 </body>
+</html>
