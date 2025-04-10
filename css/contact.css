@@ -1,6 +1,7 @@
 main {
     margin: auto;
     max-width: 500px;
+    margin-top: 20px;
 }
 
 #redes p {
@@ -19,8 +20,12 @@ form {
     font-size: 1em;
 }
 
+#enviar {
+    padding: 5px;
+}
+
 #mensagem {
-    opacity: 1;
+    opacity: 0;
     margin: auto;
     margin-top: 10px;
     background-color: #0be60b7a;
