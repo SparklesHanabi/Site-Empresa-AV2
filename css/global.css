@@ -25,6 +25,7 @@
     margin: 0%;
     padding: 0%;
     font-family: poppins;
+    font-size: 18px;
 }
 
 header {
@@ -33,7 +34,7 @@ header {
 
 .logo {
     text-decoration-line: none;
-    position: absolute;
+    width: auto;
 }
 
 nav {
@@ -42,25 +43,39 @@ nav {
     display: flex;
     padding-right: 50px;
     padding-left: 20px;
-    min-height: 8vh;
+    min-height: 10vh;
     align-items: center;
-    
+
 }
 
 nav ul {
     display: flex;
     margin-left: auto;
-    padding-left: 30vw;
-    flex-wrap: wrap;
+    padding-left: 2vw;
+    flex-wrap: nowrap;
 }
 
 nav ul a {
-    margin-left: 50px;
-    text-decoration-line: none;
+    all: unset;
 }
 
+.navButtom {
+    cursor: pointer;
+    margin-left: 2vw;
+    text-decoration: none;
+    background-color: #009539;
+    padding: 8px 20px;
+    border-radius: 2vw;
+    transition: scale 0.1s ease;
+}
 
+.navButtom:hover {
+    scale: 0.9;
+}
 
+.navButtom:active {
+    scale: 0.85;
+}
 
 
 
