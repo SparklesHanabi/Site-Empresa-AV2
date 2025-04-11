@@ -28,19 +28,16 @@
             </section>
             <section id="contato">
                 <p>Caso queira que entremos em contato contigo preencha nosso formulário!</p>
-                <form action="" class="formulario">
+                <form class="formulario" onsubmit="acaoFormulario()">
                     <label for="inome">Nome:</label>
                     <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
                     <label for="iemail">Email:</label>
                     <input type="email" name="email" id="iemail" placeholder="seu@email.com" required>
                     <label for="inumero">Numero: </label>
                     <input type="text" name="numero" id="inumero" placeholder="(xx)xxxxx-xxxx"  required>
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="enviar">
                     <div id="mensagem">Enviada com sucesso!</div>
                 </form>
-            </section>
-            <section>
-                <p>ola</p>
             </section>
         </main>
     </header>
