@@ -2,10 +2,11 @@
 
 /* VARIAVEIS PARA CORES DO SITE, GABRIEL DEVE TROCAR ELAS DEPOIS*/
 :root{
-    --main-color: #00eeff;
-    --text-color: #ffffff;
-    --bg-color-01: #1f242d;
-    --bg-color-01: #323946;
+    --main-color: #8C5230;
+    --text-color: #D9C58B;
+    --bg-color-01: #65321D;
+    --bg-color-02: #261717;
+    --bg-color-03: #A67041;
 
     /* cores extras */
     --color-01: #999999;
@@ -15,21 +16,21 @@
     --color-05: #232323;
 }
 
-@font-face {
-    font-family: poppins;
-    src: url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-}
-
 * {
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
     font-family: poppins;
-    font-size: 18px;
+    font-size: 20px;
+    color: var(--text-color)
+}
+
+body {
+    background-color: var(--bg-color-01);
 }
 
 header {
-    background-color: rgb(200, 226, 248);
+    background-color: var(--bg-color-02);
 }
 
 .logo {
@@ -41,11 +42,10 @@ nav {
     position: sticky;
     top: 0%;
     display: flex;
-    padding-right: 50px;
+    padding-right: 30px;
     padding-left: 20px;
     min-height: 10vh;
     align-items: center;
-
 }
 
 nav ul {
@@ -57,16 +57,14 @@ nav ul {
 
 nav ul a {
     all: unset;
+    font-weight: 500;
 }
 
 .navButtom {
     cursor: pointer;
-    margin-left: 2vw;
+    margin-left: 3vw;
     text-decoration: none;
-    background-color: #009539;
-    padding: 8px 20px;
-    border-radius: 2vw;
-    transition: scale 0.1s ease;
+    transition: scale 50ms ease;
 }
 
 .navButtom:hover {
@@ -78,5 +76,32 @@ nav ul a {
 }
 
 
+/* Carrossel */
+/* Vou refazer toda essa animação! */
+.aside_1 {
+    position: relative;
+    width: 40vw;
+    height: 80vh;
+    top: 4vh;
+    left: 2vw;
+    background-color: var(--main-color);
+    gap: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
 
+.aside_1 div {
+    flex: 0 0 auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: #009539;
+    width: 30vw;
+    height: 75vh;
+    border-radius: 2vw;
+    scroll-behavior: smooth;
+}
 
