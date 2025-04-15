@@ -37,13 +37,13 @@ header {
     text-decoration-line: none;
     width: auto;
 }
-.logo-img{
+.logo-img {
     width: 50px;
     height: 50px;
     overflow: hidden;
     
 }
-.logo-img img{
+.logo-img img {
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -72,7 +72,6 @@ nav ul a {
 }
 
 .navButtom {
-    position: inherit;
     cursor: pointer;
     margin-left: 3vw;
     text-decoration: none;
@@ -116,8 +115,11 @@ nav ul a {
     border-radius: 2vw;
     scroll-behavior: smooth;
 }
+
+
+
 /* PAGINA DE DESTAQUES */
-.card{
+.card {
     background-color: var(--bg-color-03);
     width: 500px;
     padding: 25px 30px;
@@ -127,17 +129,17 @@ nav ul a {
 
     z-index: 10;
 }
-.card h2{
+.card h2 {
     text-align: center;
     font-size: 30px;
 }
-.destaque-container{
+.destaque-container {
     
     width: 400px;
     height: 250px;
     overflow: hidden;
 }
-.destaque-container img{
+.destaque-container img {
     width: 100%;
     height: 100%;
     margin-left: 25px;
@@ -145,11 +147,11 @@ nav ul a {
 }
 
 /* CARD DE CAFÉ */
-#ch{
+#ch {
     display: none;
     
 }
-label{
+label {
     transition: scale 70ms ease;
 }
 label:hover {
@@ -158,37 +160,37 @@ label:hover {
 
 
 
-#ch:checked ~ .content{
+#ch:checked ~ .content {
     display: block;
 }
-#ch:checked ~label{
+#ch:checked ~ label {
     display: none;
 }
-.content{
+.content {
     display: none;
 }
 /* CARD DE EMPREGADOS */
-#ch-emp{
+#ch-emp {
     display: none;
 }
-#ch-emp:checked ~ .content{
+#ch-emp:checked ~ .content {
     display: block;
 }
-#ch-emp:checked ~label{
+#ch-emp:checked ~ label {
     display: none;
 }
 
-#ch-work{
+#ch-work {
     display: none;
 }
-#ch-work:checked ~ .content{
+#ch-work:checked ~ .content {
     display: block;
 }
-#ch-work:checked ~label{
+#ch-work:checked ~ label {
     display: none;
 }
 
-label{
+label {
     display: inline-block;
     cursor: pointer;
     color: antiquewhite;
@@ -197,8 +199,11 @@ label{
     border-radius: 3px;
     margin-top: 12px;
 }
+
+
+
 /* FOOTER DAS PAGINAS */
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
