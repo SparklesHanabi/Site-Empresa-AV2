@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fale conosco!</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="shortcut icon" href="image/icones/cafe.png" type="image/x-icon">
-    <script src="js/formulario.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html" class="logo">The Coding Cup</a>
-            <div class="logo-img"><img src="image/icones/cafe.png" alt=""></div>
+            <div class="logo">
+                <a href="index.html">
+                    <div class="title_nav_logo">
+                        <span>T</span><span>he</span>C<span>oding</span>C<span>up</span>
+                    </div>
+                    <img src="image/icones/cafe.png">
+                </a>
+            </div>
+
             <ul>
                 <a href="index.html" class="navButtom">Início</a>
                 <a href="destaque.html" class="navButtom">Destaques</a>
-                <a href="abtus.html" class="navButtom">Sobre Nós</a>
+                <a href="about.html" class="navButtom">Sobre Nós</a>
                 <a href="news.html" class="navButtom">Novidades</a>
                 <a href="contact.html" class="navButtom">Fale Conosco</a>
             </ul>
         </nav>
-
+    </header>
         <main>
-            <section id="redes">
-                <p>Você pode conhecer mais sobre nós em nossas redes sociais:</p>
-                <a href=""><img src="" alt=""></a>
-            </section>
             <section id="contato">
-                <p>Caso queira que entremos em contato contigo preencha nosso formulário!</p>
-                <form action="" id="formulario" onsubmit="acaoFormulario()">
+                <h1 class="titulo">Caso queira fazer alguma reclamação ou elogio, peço para que preencha os campos do nosso formulário!</h1>
+                <form action="" id="formulario">
                     <label for="inome">Nome:</label>
                     <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
                     <label for="iemail">Email:</label>
                     <input type="email" name="email" id="iemail" placeholder="seu@email.com" required>
-                    <label for="inumero">Numero: </label>
-                    <input type="text" name="numero" id="inumero" placeholder="(xx)xxxxx-xxxx"  required>
+                    <label for="imensagem">Mensagem: </label>
+                    <textarea name="mensagem" id="imensagem" rows="5" cols="100" required></textarea>
                     <input type="submit" value="Enviar" id="enviar">
                     <div id="mensagem">Enviada com sucesso!</div>
                 </form>
             </section>
+            <section>
+                <h2 id="subtitulo">Você pode conhecer mais sobre nós e entrar em contato por meio de nossas redes:</h2>
+                <section id="redes-sociais">
+                    <div class="separador"><a href="">Instagram<img src="image/fale conosco/instagram.png" alt="instagram" class="icones"></a></div>
+                    <div class="separador"><a href="">Tiktok<img src="image/fale conosco/tik-tok.png" alt="tiktok" class="icones"></a></div>
+                    <div class="separador"><a href="">Whatsapp<img src="image/fale conosco/whatsapp.png" alt="whatsapp" class="icones"></a></div>
+                </section>
+            </section>
         </main>
-    </header>
-    
+
     <footer>
-        <p>Copyright &copy; 2025 by XXXXXXX . All rights Reserved</p>
+        <p>&copy; Site desenvolvido por Coding Cup</p>
     </footer>
+    <script src="js/formulario.js"></script>
 </body>
 </html>

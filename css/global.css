@@ -33,22 +33,9 @@ header {
     background-color: var(--bg-color-02);
 }
 
-.logo {
-    text-decoration-line: none;
-    width: auto;
-}
-.logo-img{
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    
-}
-.logo-img img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
 
+
+/* Barra de Navegação */
 nav {
     position: sticky;
     top: 0%;
@@ -57,6 +44,7 @@ nav {
     padding-left: 20px;
     min-height: 10vh;
     align-items: center;
+    overflow: hidden;
 }
 
 nav ul {
@@ -69,10 +57,10 @@ nav ul {
 nav ul a {
     all: unset;
     font-weight: 500;
+    overflow: hidden;
 }
 /* css de barra de nav */
 .navButtom {
-    position: inherit;
     cursor: pointer;
     margin-left: 3vw;
     text-decoration: none;
@@ -105,9 +93,82 @@ nav ul a {
     -webkit-text-stroke: 1.25px black;
 }
 
+/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
+.destaque-background{
+    background-image: url(../image/icones/trabalhogp.jpeg);
+    background-repeat: no-repeat;
+   background-position: center;
+    
+}
+.titulo-texto{
+    padding-top: 10px;
+   letter-spacing: 1px;
+    text-align: center;
+}
+.titulo-texto h2, span{
+    font-size: 30px;
+   
+    -webkit-text-stroke: 1.25px black;
+}
 
-/* Carrossel */
-/* Vou refazer toda essa animação! */
+
+/* Logo na NavBar */
+.logo {
+    position: absolute;
+    top: 1.5vh;
+    left: 2.2vw;
+}
+
+.logo a {
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo a img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo a .title_nav_logo span {
+    display: inline-block;
+    width: 0;
+    height: 34px;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: 1s ease-in-out;
+}
+
+.title_nav_logo {
+    padding-top: 10px;
+}
+
+.logo:hover span:nth-child(1) {
+    width: 12px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(2) {
+    width: 30px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(3) {
+    width: 62px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(4) {
+    width: 28px;
+    overflow: hidden;
+}
+
+
+
+/* PAGINA INICIAL */
+
+/* Carrossel pag:inicio */
 .aside_1 {
     position: relative;
     width: 40vw;
@@ -116,12 +177,10 @@ nav ul a {
     left: 2vw;
     background-color: var(--main-color);
     gap: 2vw;
-    padding-left: 2vw;
+    padding-left: 3.4vw;
     padding-right: 2vw;
     display: flex;
     overflow: hidden;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
 }
 
 .aside_1 div {
@@ -131,9 +190,80 @@ nav ul a {
     background-color: #009539;
     width: 30vw;
     height: 75vh;
+    border: black solid 1px;
     border-radius: 2vw;
-    scroll-behavior: smooth;
+    animation: carrossel_a 19s ease-in-out forwards;
 }
+
+/* 19s */
+@keyframes carrossel_a {
+    0% {
+        transform: translate(-99.9%);
+    }
+
+    25% {
+        transform: translate(-99.9%);
+    }
+
+    35% {
+        transform: translate(-206.65%);
+    }
+
+    60% {
+        transform: translate(-206.65%);
+    }
+
+    70% {
+        transform: translate(-313.2%);
+    }
+
+    100% {
+        transform: translate(-313.2%);
+    }
+
+}
+
+/* 9s */
+@keyframes carrossel_b {
+    22.23% {
+        transform: translate(-420%);
+    }
+
+    77.78% {
+        transform: translate(-420%);
+    }
+
+    100% {
+        transform: translate(-526.6%);
+    }
+}
+
+@keyframes carrossel_scale_1 {
+    from {
+        scale: 1;
+    }
+}
+
+@keyframes carrossel_scale_2 {
+    from {
+        scale: 0.8;
+    }
+}
+
+
+
+
+#principal-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titulo-destaque {
+    font-size: 2em;
+    margin: 20px;
+}
+
 /* PAGINA DE DESTAQUES */
 .card{
     background-color: rgba(166, 112, 65, 0.550);
@@ -150,17 +280,17 @@ nav ul a {
 
     z-index: 10;
 }
-.card h2{
+.card h2 {
     text-align: center;
     font-size: 30px;
 }
-.destaque-container{
+.destaque-container {
     
     width: 400px;
     height: 250px;
     overflow: hidden;
 }
-.destaque-container img{
+.destaque-container img {
     width: 100%;
     height: 100%;
     margin-left: 25px;
@@ -168,50 +298,49 @@ nav ul a {
 }
 
 /* CARD DE CAFÉ */
-#ch{
+#ch {
     display: none;
     
 }
-label{
+label {
     transition: scale 70ms ease;
 }
 label:hover {
     scale: 0.9;
 }
 
-
-
-#ch:checked ~ .content{
+#ch:checked ~ .content {
     display: block;
 }
-#ch:checked ~label{
+#ch:checked ~ label {
     display: none;
 }
-.content{
+.content {
     display: none;
 }
+
 /* CARD DE EMPREGADOS */
-#ch-emp{
+#ch-emp {
     display: none;
 }
-#ch-emp:checked ~ .content{
+#ch-emp:checked ~ .content {
     display: block;
 }
-#ch-emp:checked ~label{
+#ch-emp:checked ~ label {
     display: none;
 }
 
-#ch-work{
+#ch-work {
     display: none;
 }
-#ch-work:checked ~ .content{
+#ch-work:checked ~ .content {
     display: block;
 }
-#ch-work:checked ~label{
+#ch-work:checked ~ label {
     display: none;
 }
 
-label{
+label {
     display: inline-block;
     cursor: pointer;
     color: antiquewhite;
@@ -224,7 +353,7 @@ label{
 /* FIM SEÇÃO DE CSS PAG DE DESTAQUES */
 
 /* FOOTER DAS PAGINAS */
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
