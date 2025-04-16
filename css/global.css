@@ -33,22 +33,9 @@ header {
     background-color: var(--bg-color-02);
 }
 
-.logo {
-    text-decoration-line: none;
-    width: auto;
-}
-.logo-img {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    
-}
-.logo-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
 
+
+/* Barra de Navegação */
 nav {
     position: sticky;
     top: 0%;
@@ -57,6 +44,7 @@ nav {
     padding-left: 20px;
     min-height: 10vh;
     align-items: center;
+    overflow: hidden;
 }
 
 nav ul {
@@ -69,6 +57,7 @@ nav ul {
 nav ul a {
     all: unset;
     font-weight: 500;
+    overflow: hidden;
 }
 
 .navButtom {
@@ -87,8 +76,63 @@ nav ul a {
 }
 
 
-/* Carrossel */
-/* Vou refazer toda essa animação! */
+/* Logo na NavBar */
+.logo {
+    position: absolute;
+    top: 1.5vh;
+    left: 2.2vw;
+}
+
+.logo a {
+    text-decoration-line: none;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.logo a img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo a .title_nav_logo span {
+    display: inline-block;
+    width: 0;
+    height: 34px;
+    overflow: hidden;
+    vertical-align: middle;
+    transition: 1s ease-in-out;
+}
+
+.title_nav_logo {
+    padding-top: 10px;
+}
+
+.logo:hover span:nth-child(1) {
+    width: 12px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(2) {
+    width: 30px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(3) {
+    width: 62px;
+    overflow: hidden;
+}
+
+.logo:hover span:nth-child(4) {
+    width: 28px;
+    overflow: hidden;
+}
+
+
+
+/* PAGINA INICIAL */
+
+/* Carrossel pag:inicio */
 .aside_1 {
     position: relative;
     width: 40vw;
@@ -97,12 +141,10 @@ nav ul a {
     left: 2vw;
     background-color: var(--main-color);
     gap: 2vw;
-    padding-left: 2vw;
+    padding-left: 3.4vw;
     padding-right: 2vw;
     display: flex;
     overflow: hidden;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
 }
 
 .aside_1 div {
@@ -112,9 +154,68 @@ nav ul a {
     background-color: #009539;
     width: 30vw;
     height: 75vh;
+    border: black solid 1px;
     border-radius: 2vw;
-    scroll-behavior: smooth;
+    animation: carrossel_a 19s ease-in-out forwards;
 }
+
+/* 19s */
+@keyframes carrossel_a {
+    0% {
+        transform: translate(-99.9%);
+    }
+
+    25% {
+        transform: translate(-99.9%);
+    }
+
+    35% {
+        transform: translate(-206.65%);
+    }
+
+    60% {
+        transform: translate(-206.65%);
+    }
+
+    70% {
+        transform: translate(-313.2%);
+    }
+
+    100% {
+        transform: translate(-313.2%);
+    }
+
+}
+
+/* 9s */
+@keyframes carrossel_b {
+    22.23% {
+        transform: translate(-420%);
+    }
+
+    77.78% {
+        transform: translate(-420%);
+    }
+
+    100% {
+        transform: translate(-526.6%);
+    }
+}
+
+@keyframes carrossel_scale_1 {
+    from {
+        scale: 1;
+    }
+}
+
+@keyframes carrossel_scale_2 {
+    from {
+        scale: 0.8;
+    }
+}
+
+
+
 
 
 
@@ -158,8 +259,6 @@ label:hover {
     scale: 0.9;
 }
 
-
-
 #ch:checked ~ .content {
     display: block;
 }
@@ -169,6 +268,7 @@ label:hover {
 .content {
     display: none;
 }
+
 /* CARD DE EMPREGADOS */
 #ch-emp {
     display: none;
