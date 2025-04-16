@@ -6,7 +6,7 @@
     --text-color: #D9C58B;
     --bg-color-01: #65321D;
     --bg-color-02: #261717;
-    --bg-color-03: #A67041;
+    --bg-color-03: #a67041;
 
     /* cores extras */
     --color-01: #999999;
@@ -70,7 +70,7 @@ nav ul a {
     all: unset;
     font-weight: 500;
 }
-
+/* css de barra de nav */
 .navButtom {
     position: inherit;
     cursor: pointer;
@@ -85,6 +85,24 @@ nav ul a {
 
 .navButtom:active {
     scale: 0.85;
+}
+
+/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
+.destaque-background{
+    background-image: url(../image/icones/trabalhogp.jpeg);
+    background-repeat: no-repeat;
+   background-position: center;
+    
+}
+.titulo-texto{
+    padding-top: 10px;
+   letter-spacing: 1px;
+    text-align: center;
+}
+.titulo-texto h2, span{
+    font-size: 30px;
+   
+    -webkit-text-stroke: 1.25px black;
 }
 
 
@@ -118,12 +136,17 @@ nav ul a {
 }
 /* PAGINA DE DESTAQUES */
 .card{
-    background-color: var(--bg-color-03);
+    background-color: rgba(166, 112, 65, 0.550);
     width: 500px;
     padding: 25px 30px;
     border-radius: 10px;
+    border-top: 2px solid var(--bg-color-02);
+    border-left: 2px solid var(--bg-color-02);
+    border-right: 2px solid var(--bg-color-02);
+    border-bottom: 2px solid var(--bg-color-02) ;
     line-height: 1.7;
     margin-top: 10px;
+    backdrop-filter: blur(10px);
 
     z-index: 10;
 }
@@ -197,6 +220,9 @@ label{
     border-radius: 3px;
     margin-top: 12px;
 }
+
+/* FIM SEÇÃO DE CSS PAG DE DESTAQUES */
+
 /* FOOTER DAS PAGINAS */
 footer{
     display: flex;
