@@ -217,7 +217,16 @@ nav ul a {
 
 
 
+#principal-destaque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#titulo-destaque {
+    font-size: 2em;
+    margin: 20px;
+}
 
 /* PAGINA DE DESTAQUES */
 .card {

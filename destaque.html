@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITULO SITE CAFETERIA]</title>
+    <title>Destaques!</title>
     <!-- Icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Conexão ao CSS -->
@@ -27,69 +27,51 @@
             <ul>
                 <a href="index.html" class="navButtom">Início</a>
                 <a href="destaque.html" class="navButtom">Destaques</a>
-                <a href="abtus.html" class="navButtom">Sobre Nós</a>
+                <a href="about.html" class="navButtom">Sobre Nós</a>
                 <a href="news.html" class="navButtom">Novidades</a>
                 <a href="contact.html" class="navButtom">Fale Conosco</a>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <div>
-            Nossos <span>Destaques</span>
+    <main id="principal-destaque">
+        <h1 id="titulo-destaque">Nossos Destaques</h1>
+        <div class="card">
+            <input id="ch" type="checkbox">
+            <h2>Café</h2>
+            <div class="destaque-container"> <img src="image/destaque/close-up-hand-pouring-milk-delicious-coffee-cup.jpg" alt=""></div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
+                <label for="ch">Mostrar menos</label>
+            </div>
+            <label for="ch">Ler mais</label>
         </div>
-    </section>
-    
-
-    <div class="card">
-        <input id="ch" type="checkbox">
-
-        <h2>Café</h2>
-        <div class="destaque-container"> <img src="image/icones/close-up-hand-pouring-milk-delicious-coffee-cup.jpg" alt=""></div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
-        <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
-
-            <label for="ch">Mostrar menos</label>
+        <div class="card">
+            <input id="ch-emp" type="checkbox">
+            <h2>Funcionários</h2>
+            <div class="destaque-container"><img src="image/destaque/barista.jpg" alt=""></div>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
+                <label for="ch-emp">Mostrar menos</label>
+            </div>
+            <label for="ch-emp">Ler mais</label>
         </div>
-
-        <label for="ch">Ler mais</label>
-    </div>
-    <div class="card">
-        <input id="ch-emp" type="checkbox">
-
-        <h2>Empregados</h2>
-        <div class="destaque-container"><img src="image/icones/barista.jpg" alt=""></div>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
-        <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
-
-            <label for="ch-emp">Mostrar menos</label>
+        <div class="card">
+            <input id="ch-work" type="checkbox">
+            <h2>Conforto para Trabalho</h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
+                <label for="ch-work">Mostrar menos</label>
+            </div>
+            <label for="ch-work">Ler mais</label>
         </div>
-
-        <label for="ch-emp">Ler mais</label>
-    </div>
-    <div class="card">
-        <input id="ch-work" type="checkbox">
-
-        <h2>Conforto para Trabalho</h2>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate suscipit a rem explicabo in...</p>
-        <div class="content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, vel. Veniam aut quod corporis!.
-
-            <label for="ch-work">Mostrar menos</label>
-        </div>
-
-        <label for="ch-work">Ler mais</label>
-    </div>
-
-    
-
-
-    
-
+    </main>
     <footer>
-        <p>Copyright &copy; 2025 by XXXXXXX . All rights Reserved</p>
+        <p>&copy; Site desenvolvido por Coding Cup</p>
     </footer>
 
 </body>
+</html>
