@@ -1,3 +1,4 @@
+
 /* imagem de fundo e cor do texto */
     main{
         background-image: url(../image/sobre_nos/fundocafeteria.jpg);
@@ -10,6 +11,7 @@
         #about h2 {
             color: white;
         }
+
 
     /* historia */
         #about {
