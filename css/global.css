@@ -62,7 +62,7 @@ nav ul a {
     font-weight: 500;
     overflow: hidden;
 }
-/* css de barra de nav */
+
 .navButtom {
     cursor: pointer;
     margin-left: 3vw;
@@ -76,42 +76,6 @@ nav ul a {
 
 .navButtom:active {
     scale: 0.85;
-}
-
-/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
-.destaque-background{
-    /* background-image: url(../image/icones/cafecomp.jpeg); */
-    background-repeat: no-repeat;
-   background-position: center;
-    
-}
-.titulo-texto{
-    padding-top: 10px;
-   letter-spacing: 1px;
-    text-align: center;
-}
-.titulo-texto h2, span{
-    font-size: 30px;
-   
-    -webkit-text-stroke: 1.25px black;
-}
-
-/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
-.destaque-background{
-    background-image: url(../image/icones/cafecomp.jpeg);
-    background-repeat: no-repeat;
-   background-position: center;
-    
-}
-.titulo-texto{
-    padding-top: 10px;
-   letter-spacing: 1px;
-    text-align: center;
-}
-.titulo-texto h2, span{
-    font-size: 30px;
-   
-    -webkit-text-stroke: 1.25px black;
 }
 
 
@@ -134,38 +98,83 @@ nav ul a {
     height: 40px;
 }
 
-.logo a .title_nav_logo span {
+.logo a .title_nav_text {
     display: inline-block;
     width: 0;
-    height: 34px;
     overflow: hidden;
     vertical-align: middle;
     transition: 1s ease-in-out;
 }
 
-.title_nav_logo {
+.title_nav_text_CC {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.title_nav_text, .title_nav_text_CC {
     padding-top: 10px;
 }
 
-.logo:hover span:nth-child(1) {
+.logo a:hover .title_nav_text:nth-child(1) {
     width: 12px;
     overflow: hidden;
 }
 
-.logo:hover span:nth-child(2) {
+.logo a:hover .title_nav_text:nth-child(2) {
     width: 30px;
     overflow: hidden;
 }
 
-.logo:hover span:nth-child(3) {
+.logo a:hover .title_nav_text:nth-child(4) {
     width: 62px;
     overflow: hidden;
 }
 
-.logo:hover span:nth-child(4) {
+.logo a:hover .title_nav_text:nth-child(6) {
     width: 28px;
     overflow: hidden;
 }
+
+
+
+
+
+
+
+/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
+.destaque-background{
+    /* background-image: url(../image/icones/cafecomp.jpeg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.titulo-texto{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.titulo-texto h2, span{
+    font-size: 30px;
+    -webkit-text-stroke: 1.25px black;
+}
+
+/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
+.destaque-background{
+    background-image: url(../image/icones/cafecomp.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.titulo-texto{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.titulo-texto h2, span{
+    font-size: 30px;
+    -webkit-text-stroke: 1.25px black;
+}
+
 
 
 
@@ -252,6 +261,7 @@ nav ul a {
         scale: 0.8;
     }
 }
+
 
 
 
