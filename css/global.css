@@ -262,6 +262,22 @@ nav ul a {
     }
 }
 
+.main_p {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.P_other-side {
+    word-wrap: break-word;
+    margin: 5vh 0vw 0vw 3vw;
+    width: 55vw;
+}
+
+.P-text_boas-vindas {
+    background-color: blueviolet;
+}
+
+
 
 
 
