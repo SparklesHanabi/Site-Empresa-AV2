@@ -1,56 +1,79 @@
-*{
+* {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 main {
+    max-width: 1000px;
     margin: auto;
-    max-width: 80%;
+    background-color: #D9C58B;
+    border-radius: 20px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    background-color: #b89222;
-    border-radius: 10px;
+    gap: 40px;
 }
 
 main h1 {
-    color:white;
+    color: #8C5230;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
-.novidades {
-    margin: auto;
-    text-align: center;
-}
-
-.novidades p {
-    color: white;
-    font-weight: 700;
-    font-size: 1.3em;
-    text-align: center;
-    background-color: rgba(58, 58, 58, 0.473);
-    border-radius: 20px;
-}
-
-.tortas {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.separador {
+.novidade {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    align-items: center;
+    gap: 25px;
 }
 
-.img-cafeGourmet {
-    width: 900px;
-    height: auto;
+.novidade.destaque .descricao {
+    background-color: #65321D;
+    padding: 20px;
+    border-radius: 15px;
 }
 
+.descricao p {
+    color: #D9C58B;
+    font-size: 1.2em;
+    font-weight: 500;
+    line-height: 1.6;
+}
 
-.img500 {
-    width: 400px;
-    height: auto;
+.img-destaque {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.grupo-tortas {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color: #a67041;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.item p {
+    color: #fff5e6;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+.img-torta {
+    width: 100%;
+    border-radius: 10px;
 }
