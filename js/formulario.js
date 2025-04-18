@@ -1,5 +1,5 @@
 document.querySelector("#formulario").addEventListener('submit', (event) => {
-event.preventDefault();
+// event.preventDefault();
 const mensagemDiv = document.getElementById('mensagem');    
 
 mensagemDiv.style.opacity = "1";

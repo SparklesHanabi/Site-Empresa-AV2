@@ -32,17 +32,21 @@
         <main>
             <section id="contato">
                 <h1 class="titulo">Caso queira fazer alguma reclamação ou elogio, peço para que preencha os campos do nosso formulário!</h1>
-                <form action="" id="formulario">
+                <form action="gravar.php" id="formulario" method="post">
                     <label for="inome">Nome:</label>
                     <input type="text" name="nome" id="inome" placeholder="Seu nome" required>
+
                     <label for="iemail">Email:</label>
-                    <input type="email" name="email" id="iemail" placeholder="seu@email.com" required>
+                    <input type="email" name="email" id="iemail" placeholder="Seu@email.com"required><br>
+
                     <label for="imensagem">Mensagem: </label>
                     <textarea name="mensagem" id="imensagem" rows="5" cols="100" required></textarea>
-                    <input type="submit" value="Enviar" id="enviar">
+
+                    <button type="submit" value="Enviar" id="enviar">Enviar</button>
                     <div id="mensagem">Enviada com sucesso!</div>
                 </form>
             </section>
+
             <section>
                 <h2 id="subtitulo">Você pode conhecer mais sobre nós e entrar em contato por meio de nossas redes:</h2>
                 <section id="redes-sociais">
@@ -56,6 +60,6 @@
     <footer>
         <p>&copy; Site desenvolvido por Coding Cup</p>
     </footer>
-    <script src="js/formulario.js"></script>
+     <script src="js/formulario.js"></script>
 </body>
 </html>
