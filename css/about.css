@@ -1,26 +1,29 @@
-/* imagem de fundo e cor do texto */
+/* imagem de fundo  */
 main{
     background-image: url(../image/sobre_nos/fundocafeteria.jpg);
     background-size: cover;
-    color: #D9C58B;
+    
     margin: auto;
 }
 
 /* essa parte é da historia da cafeteria */
-/* titulo da historia */
+/* titulo */
 #about h2 {
     color: white;
 }
 
-/* historia */
+/* texto */
 #about {
     padding: 10px;
     max-width: 700px;
     margin: auto;  
-    background-color:rgba(166, 112, 65, 0.7);
+    background-color:rgba(166, 112, 65, 0.85);
     text-indent: 30px;
     text-align: justify;
-    word-spacing: 5px;   
+    word-spacing: 2px;
+    border: 2px solid black;
+    
+    border-radius: 5px;
 }
 
 #about p {
@@ -39,6 +42,16 @@ main{
     padding-bottom: 50px; 
     margin-top: 30px;
 }
+
+#todas_lojas h2, p{
+    color: white;
+    
+}
+
+#titulo_todas_lojas{
+    width: 310px;
+    height: 30px;
+}
 /* div loja */
 .loja{
     text-align: center;
@@ -48,7 +61,10 @@ main{
 }
 
 .loja img{
-    max-width: 250px;
+    padding-right: 12px;
+    height: 150px;
+    text-align: center;
+    width: 250px;
 }
 
 @media screen and (max-width: 768px) {
