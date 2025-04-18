@@ -153,10 +153,6 @@ nav ul a {
     letter-spacing: 1px;
     text-align: center;
 }
-.titulo-texto h2, span{
-    font-size: 30px;
-    -webkit-text-stroke: 1.25px black;
-}
 
 /* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
 .destaque-background{
@@ -193,6 +189,9 @@ nav ul a {
     padding-right: 2vw;
     display: flex;
     overflow: hidden;
+
+    /* Modificando */
+    box-shadow: inset 0 0 20px #000;
 }
 
 .aside_1 div {
@@ -204,7 +203,7 @@ nav ul a {
     height: 75vh;
     border: black solid 1px;
     border-radius: 2vw;
-    animation: carrossel_a 19s ease-in-out forwards;
+    animation: carrossel_a 19s ease forwards;
 }
 
 /* 19s */
@@ -269,14 +268,66 @@ nav ul a {
 
 .P_other-side {
     word-wrap: break-word;
-    margin: 5vh 0vw 0vw 3vw;
-    width: 55vw;
+    margin: 5vh 0vw 0vw 5vw;
+    width: 50vw;
 }
 
-.P-text_boas-vindas {
-    background-color: blueviolet;
+.P_other-side h1 {
+    font-size: 5vw;
 }
 
+/* .P-text_boas-vindas {
+    background-color: rgba(164, 106, 219, 0.623);
+} */
+
+.button_P_C {
+    text-decoration: none;
+}
+
+.button_P_CC {
+    background-color: var(--main-color);
+    width: 300px;
+    max-width: 20vw;
+    padding: 0.8vw;
+    border-radius: 1.5vw;
+    border: #261717 solid 0.1vw;
+    text-align: center;
+    transition: background-color 0.1s ease-in-out, scale 0.1s ease-in-out, border 0.1s ease-in-out;
+}
+
+.button_P_CC:hover {
+    scale: 0.97;
+    border-width: 0.15vw;
+}
+
+.button_P_CC:active {
+    scale: 0.95;
+    border-width: 0.2vw;
+    background-color: #7c4b2e;
+}
+
+.carrossel_img_1 {
+    width: 27vw;
+    margin: 2vh 0vw 2vh 1.5vw;
+    border-radius: 1vw;
+    border: #261717 solid 0.2vw;
+}
+
+
+.carrosel_element_1 h2 {
+    padding: 0vw 2vw 2vh 2vw;
+    font-size: 2vw;
+}
+
+.carrosel_element_1 p {
+    margin: 0vw 2vw 2vh 2vw;
+    background-color: var(--main-color);
+    width: 200px;
+    max-width: 20vw;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    text-align: center;
+}
 
 
 
