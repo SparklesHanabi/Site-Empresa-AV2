@@ -1,16 +1,49 @@
-#titulo {
-    color: white;
-}
+
+/* imagem de fundo e cor do texto */
+    main{
+        background-image: url(../image/sobre_nos/fundocafeteria.jpg);
+        background-size: cover;
+        color: #D9C58B;
+        margin: auto;
+    }
+
+/* essa parte é da historia da cafeteria */
+    /* titulo da historia */
+        #about h2 {
+            color: white;
+        }
 
 
-#about {
-    margin: auto;
-    max-width: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    /* historia */
+        #about {
+            padding: 10px;
+            max-width: 700px;
+            margin: auto;  
+            background-color:rgba(166, 112, 65, 0.7);
+            text-indent: 30px;
+            text-align: justify;
+            word-spacing: 5px;    
+        }
 
-p {
-    color: rgb(255, 255, 255);
-}
+/* essa parte é o endereço das lojas */
+    /* container das div loja  */
+        #todas_lojas{
+            background-color: rgba(0, 0, 0, 0.5); /* cor temporaria*/
+            display: flex;
+            gap: 20px;
+            height: 500px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+    /* div loja */
+    .loja{
+        text-align: center;
+        max-width: 275px;
+        background-color: rgba(161, 113, 10, 0.589); /* cor temporaria*/
+        padding: 20px;
+    }
+
+    .loja img{
+        max-width: 250px;
+    }
