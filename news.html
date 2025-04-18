@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITULO SITE CAFETERIA]</title>
+    <title>Nossas novidades!</title>
     <!-- Icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Conexão ao CSS -->
     <link rel="stylesheet" href="css/global.css">
     <link rel="shortcut icon" href="image/icones/cafe.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/news.css">
 </head>
 
 <body>
@@ -21,8 +22,7 @@
                     <img src="image/icones/cafe.png">
                 </a>
             </div>
-
-            <ul>
+            <ul id="menu">
                 <a href="index.html" class="navButtom">Início</a>
                 <a href="destaque.html" class="navButtom">Destaques</a>
                 <a href="about.html" class="navButtom">Sobre Nós</a>
@@ -30,16 +30,30 @@
                 <a href="contact.html" class="navButtom">Fale Conosco</a>
             </ul>
         </nav>
+        <button id="menu-botao" onclick="acaoBotao()"><img src="image/icones/menu.png" alt="" id="imgbotao"></button>
     </header>
-
     <main>
-        <section>
-            
+        <h1>Venha provar as novidadaes da nossa cafeteria!</h1>
+        <section class="novidades">
+            <img src="image/novidades/cafe-gourmet.jpg" alt="" class="img-cafeGourmet">
+            <p>Venha experimentar o nosso novo café gourmet! O toque especial vem na cobertura generosa de chantilly artesanal, batido à mão com creme fresco e um toque sutil de açúcar baunilhado. Ao se misturar com o calor do café, o chantilly derrete lentamente, criando uma textura cremosa e aveludada que envolve o paladar em cada gole. </p><br>
+            <p>Servido em taça de vidro, finalizado com raspas de chocolate amargo e um leve toque de canela</p>
+        </section>
+        <section class="novidades tortas">
+            <div class="separador">
+                <img src="image/novidades/torta1.jpg" alt="" class="img500">
+                <p>Venha experimentar nossa nova tora de limão!</p>
+            </div>
+            <div class="separador">
+                <img src="image/novidades/torta2.jpg" alt="" class="img500">
+                <p>Venha experimentar nosso novo brownie!</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <p>&copy; Site desenvolvido por Coding Cup</p>
     </footer>
+    <script src="js/menu.js"></script>
 </body>
 </html>

@@ -135,8 +135,27 @@ nav ul a {
     overflow: hidden;
 }
 
+#menu-botao {
+    display: none;
+}
 
-
+@media screen and (max-width: 768px) {
+    .logo{
+        padding: 0 0 0 30%;
+    }
+    #menu {
+        display: none;
+    }
+    #menu-botao {
+        display: block;
+        width: 100%;
+        background-color: var(--bg-color-03);
+    }
+    #imgbotao{
+        width: 30px;
+        height: auto;
+    }
+}
 
 
 
@@ -342,6 +361,35 @@ nav ul a {
 #titulo-destaque {
     font-size: 2em;
     margin: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .main_p {
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
+    .aside_1{
+        width: 100%;
+        height: 90vh;
+    }
+    .aside_1 div {
+        width: 90%;
+    }
+    .P_other-side {
+        width: 100%;
+    }
+    #titulo-boas-vindas {
+        font-size: 3em;
+    }
+    .button_P_C {
+        width: 100%;
+    }
+    .button_P_CC {
+        max-width: 100vw;
+        padding: 10px;
+    }
 }
 
 /* PAGINA DE DESTAQUES */
