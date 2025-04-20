@@ -144,25 +144,6 @@ nav ul a {
     display: none;
 }
 
-@media screen and (max-width: 768px) {
-    .logo{
-        padding: 0 0 0 30%;
-    }
-    #menu {
-        display: none;
-    }
-    #menu-botao {
-        display: block;
-        width: 100%;
-        background-color: var(--bg-color-03);
-    }
-    #imgbotao{
-        width: 30px;
-        height: auto;
-    }
-}
-
-
 
 
 /* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
@@ -410,6 +391,7 @@ nav ul a {
     line-height: 1.7;
     margin-top: 10px;
     backdrop-filter: blur(10px);
+    margin: auto;
 
     z-index: 10;
 }
@@ -495,3 +477,47 @@ footer {
     background-color: var(--bg-color-01);
 }
 /* FIM DO FOOTER */
+
+
+/* Responsividade página */
+@media screen and (max-width: 768px) {
+    /* barra de navegação */
+    .logo{
+        padding: 0 0 0 30%;
+    }
+    #menu {
+        display: none;
+    }
+    #menu-botao {
+        display: block;
+        width: 100%;
+        background-color: var(--bg-color-03);
+    }
+    #imgbotao{
+        width: 30px;
+        height: auto;
+    }
+
+    /* página principal */
+    .P-text_boas-vindas {
+        max-width: 350px;
+    }
+
+    /* página de destaques */
+    .card {
+        max-width: 350px;
+    }
+    #imgdestaque1 {
+        width: 250px;
+        height: auto;
+    }
+    #imgdestaque2 {
+        width: 250px;
+        height: auto;
+    }
+    #imgdestaque3 {
+        width: 250px;
+        height: auto;
+    }
+}
+
