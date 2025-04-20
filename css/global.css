@@ -510,14 +510,17 @@ footer {
     #imgdestaque1 {
         width: 250px;
         height: auto;
+        margin: auto;
     }
     #imgdestaque2 {
-        width: 250px;
+        width: 280px;
         height: auto;
+        margin: auto;
     }
     #imgdestaque3 {
-        width: 250px;
+        width: 280px;
         height: auto;
+        margin: auto;
     }
 }
 
