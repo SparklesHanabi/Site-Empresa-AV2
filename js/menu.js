@@ -13,7 +13,7 @@ function acaoBotao() {
         menuVisivel = true;
     } else {
         menu.style.display = "none";
-        logo.style.paddingLeft = "30%";
+        logo.style.paddingLeft = "0";
         menuVisivel = false;
     }
 }

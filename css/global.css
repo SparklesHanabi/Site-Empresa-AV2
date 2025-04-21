@@ -9,6 +9,7 @@
     --bg-color-01: #65321D;
     --bg-color-02: #261717;
     --bg-color-03: #a67041;
+    --bg-color-04: #5a2d1a;
 
     /* cores extras */
     --color-01: #999999;
@@ -20,8 +21,8 @@
 
 * {
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     font-family: poppins;
     font-size: 20px;
     color: var(--text-color)
@@ -33,23 +34,16 @@ body {
 
 header {
     background-color: var(--bg-color-02);
-}
-
-/* RESPONSIVIDADE */
-
-@media (max-width: 600px){
-
-    
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 
 /* Barra de Navegação */
 nav {
-    position: sticky;
-    top: 0%;
     display: flex;
-    padding-right: 30px;
-    padding-left: 20px;
+    padding-right: 3vw;
     min-height: 10vh;
     align-items: center;
     overflow: hidden;
@@ -62,7 +56,12 @@ nav ul {
     flex-wrap: nowrap;
 }
 
-nav ul a {
+nav ul li {
+    all: unset;
+    transition: scale 50ms ease;
+}
+
+nav ul li a {
     all: unset;
     font-weight: 500;
     overflow: hidden;
@@ -72,16 +71,17 @@ nav ul a {
     cursor: pointer;
     margin-left: 3vw;
     text-decoration: none;
-    transition: scale 50ms ease;
+    font-size: max(1.5vw, 10%);
 }
 
-.navButtom:hover {
+nav ul li:hover {
     scale: 0.9;
 }
 
-.navButtom:active {
+nav ul li:active {
     scale: 0.85;
 }
+
 
 
 /* Logo na NavBar */
@@ -99,44 +99,55 @@ nav ul a {
 }
 
 .logo a img {
-    width: 40px;
-    height: 40px;
+    width: 3vw;
+    height: 3vw;
 }
 
 .logo a .title_nav_text {
     display: inline-block;
-    width: 0;
     overflow: hidden;
     vertical-align: middle;
     transition: 1s ease-in-out;
 }
 
-.title_nav_text_CC {
-    font-size: 24px;
-    font-weight: 700;
+.title_nav_text {
+    width: 0;
+    overflow: hidden;
 }
 
 .title_nav_text, .title_nav_text_CC {
-    padding-top: 10px;
+    font-size: 1.5vw;
+}
+
+.title_nav_text_CC {
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+
+
+
+
+.title_nav_text, .title_nav_text_CC {
+    padding-top: 0.9vh;
 }
 
 .logo a:hover .title_nav_text:nth-child(1) {
-    width: 12px;
+    width: 0.9vw;
     overflow: hidden;
 }
 
 .logo a:hover .title_nav_text:nth-child(2) {
-    width: 30px;
+    width: 2.3vw;
     overflow: hidden;
 }
 
 .logo a:hover .title_nav_text:nth-child(4) {
-    width: 62px;
+    width: 4.8vw;
     overflow: hidden;
 }
 
 .logo a:hover .title_nav_text:nth-child(6) {
-    width: 28px;
+    width: 2vw;
     overflow: hidden;
 }
 
@@ -147,26 +158,12 @@ nav ul a {
 
 
 /* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
-.destaque-background{
-    /* background-image: url(../image/icones/cafecomp.jpeg); */
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-.titulo-texto{
-    padding-top: 10px;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
-.destaque-background{
+.destaque-background {
     background-image: url(../image/icones/cafecomp.jpeg);
     background-repeat: no-repeat;
     background-position: center;
-    
 }
-.titulo-texto{
+.titulo-texto {
     padding-top: 10px;
     letter-spacing: 1px;
     text-align: center;
@@ -187,29 +184,49 @@ nav ul a {
     width: 40vw;
     height: 80vh;
     top: 4vh;
-    left: 2vw;
-    background-color: var(--main-color);
+    left: 4vw;
     gap: 2vw;
-    padding-left: 3.4vw;
+    /* padding-left: 1.9vw; */
+    padding-left: 3.2vw;
     padding-right: 2vw;
     display: flex;
     overflow: hidden;
+}
 
-    /* Modificando */
-    box-shadow: inset 0 0 20px #000;
+.aside_1::before,
+.aside_1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 20px;
+}
+
+.aside_1::before {
+  left: 0px;
+  box-shadow: inset 10px 0 10px 0px var(--bg-color-01);
+  z-index: 100;
+}
+
+.aside_1::after {
+  right: 0;
+  box-shadow: inset -10px 0 10px -2px var(--bg-color-01);
+  z-index: 100;
 }
 
 .aside_1 div {
     flex: 0 0 auto;
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #009539;
+    background-color: var(--bg-color-03);
     width: 30vw;
     height: 75vh;
     border: black solid 1px;
     border-radius: 2vw;
+    overflow: hidden;
     animation: carrossel_a 19s ease forwards;
 }
+
 
 /* 19s */
 @keyframes carrossel_a {
@@ -236,35 +253,26 @@ nav ul a {
     100% {
         transform: translate(-313.2%);
     }
-
 }
 
-/* 9s */
+/* 2s */
 @keyframes carrossel_b {
-    22.23% {
-        transform: translate(-420%);
+    0% {
+        transform: translate(-313.2%);
     }
 
-    77.78% {
-        transform: translate(-420%);
+    90% {
+        transform: translate(-419.88%);
     }
 
     100% {
-        transform: translate(-526.6%);
+        transform: translate(-419.88%);
     }
 }
 
-@keyframes carrossel_scale_1 {
-    from {
-        scale: 1;
-    }
-}
 
-@keyframes carrossel_scale_2 {
-    from {
-        scale: 0.8;
-    }
-}
+
+
 
 .main_p {
     display: flex;
@@ -273,7 +281,7 @@ nav ul a {
 
 .P_other-side {
     word-wrap: break-word;
-    margin: 5vh 0vw 0vw 5vw;
+    margin: 5vh 1vw 0vw 7vw;
     width: 50vw;
 }
 
@@ -281,18 +289,14 @@ nav ul a {
     font-size: 5vw;
 }
 
-/* .P-text_boas-vindas {
-    background-color: rgba(164, 106, 219, 0.623);
-} */
-
 .button_P_C {
     text-decoration: none;
 }
 
 .button_P_CC {
     background-color: var(--main-color);
-    width: 300px;
-    max-width: 20vw;
+    font-size: max(1.5vw, 10%);
+    width: 20vw;
     padding: 0.8vw;
     border-radius: 1.5vw;
     border: #261717 solid 0.1vw;
@@ -311,28 +315,62 @@ nav ul a {
     background-color: #7c4b2e;
 }
 
-.carrossel_img_1 {
-    width: 27vw;
-    margin: 2vh 0vw 2vh 1.5vw;
-    border-radius: 1vw;
-    border: #261717 solid 0.2vw;
-}
 
 
-.carrosel_element_1 h2 {
+
+/* Conteúdo do Carrossel */
+.carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2, .carrosel_element_0 h2 {
     padding: 0vw 2vw 2vh 2vw;
     font-size: 2vw;
 }
 
-.carrosel_element_1 p {
+.carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p, .carrosel_element_0 p {
+    margin: 0vw 2vw 0vh 2vw;
+    padding: 0.5vw;
+    font-size: max(1.5vw, 10%);
+}
+
+.carrosel_element_1 b, .carrosel_element_2 b, .carrosel_element_3 b, .carrosel_element_0 b {
+    font-size: max(1.5vw, 10%);
+}
+
+.carrosel_element_1 a, .carrosel_element_2 a, .carrosel_element_3 a, .carrosel_element_0 a {
+    text-decoration-line: none;
+}
+
+.carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
+    height: 50%;
+    width: 90%;
+    object-fit: cover;
+    object-position: center;
+    margin: 3vh 0vw 2vh 1.5vw;
+    border-radius: 1vw;
+    border: #261717 solid 0.2vw;
+}
+
+.p1_buttom {
     margin: 0vw 2vw 2vh 2vw;
     background-color: var(--main-color);
-    width: 200px;
-    max-width: 20vw;
-    border-radius: 1vw;
+    width: 15vw;
+    border-radius: 1.5vw;
+    border: #26171791 solid 0.1vw;
     padding: 0.5vw;
     text-align: center;
+    text-decoration-line: none;
 }
+
+.p1_buttom:hover {
+    scale: 0.97;
+    border-width: 0.15vw;
+}
+
+.p1_buttom:active {
+    scale: 0.95;
+    border-width: 0.2vw;
+    background-color: #7c4b2e;
+}
+
+
 
 
 
@@ -350,33 +388,272 @@ nav ul a {
 }
 
 
+
+
 @media screen and (max-width: 768px) {
+
+    /* Barra de Navegação */
+    .logo {
+        padding: 0;
+    }
+    #menu {
+        display: none;
+    }
+    #menu-botao {
+        display: block;
+        width: 100%;
+        background-color: var(--bg-color-03);
+    }
+    #imgbotao {
+        width: 30px;
+        height: auto;
+    }
+
+    .logo a .title_nav_text:nth-child(1) {
+        width: 12px;
+    }
+    
+    .logo a .title_nav_text:nth-child(2) {
+        width: 30px;
+    }
+    
+    .logo a .title_nav_text:nth-child(4) {
+        width: 62px;
+    }
+    
+    .logo a .title_nav_text:nth-child(6) {
+        width: 28px;
+    }
+
+    .title_nav_text, .title_nav_text_CC {
+        font-size: 2.5vw;
+        font-weight: 700;
+    }
+
+    .logo a img {
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+
+    
+
+    
+
+    /* Pagina de Index */
     .main_p {
-        display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         overflow: hidden;
     }
-    .aside_1{
-        width: 100%;
-        height: 90vh;
-    }
-    .aside_1 div {
-        width: 90%;
-    }
+
     .P_other-side {
         width: 100%;
+        font-size: 2vw;
+        margin-top: 10vh;
+        margin: 5vh 0vw 0vw 7vw;
+        padding-right: 15vw;
     }
+
     #titulo-boas-vindas {
-        font-size: 3em;
+        font-size: 9vw;
     }
-    .button_P_C {
-        width: 100%;
-    }
+
     .button_P_CC {
-        max-width: 100vw;
+        font-size: max(3vw, 10%);
+        width: 42vw;
+    }
+
+    /* Carrossel */
+    .aside_1 {
+        width: 85%;
+        height: 100vh;
+        left: 6.5vw;
+        padding-left: 7vw;
+    }
+
+    .aside_1 div {
+        left: auto;
+        right: auto;
+        width: 90%;
+        height: 90%;
+    }
+    .carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
+        width: 93%;
+        height: 50%;
+        margin: 3vh 0vw 2vh 2.5vw;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2 {
+        font-size: 4vw;
+    }
+    
+    .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p {
+        width: 90%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        font-size: 3vw;
+    }
+
+    .carrosel_element_1 a p, .carrosel_element_2 a p, .carrosel_element_3 a p {
+        width: 50%;
+        margin-left: 5vw;
+    }
+
+    .carrosel_element_1 b, .carrosel_element_2 b, .carrosel_element_3 b, .carrosel_element_0 b {
+        font-size: max(3vw, 10%);
+    }
+
+
+
+    /* 19s */
+    @keyframes carrossel_a {
+        0% {
+            transform: translate(-102%);
+        }
+
+        25% {
+            transform: translate(-102%);
+        }
+
+        35% {
+            transform: translate(-205%);
+        }
+
+        60% {
+            transform: translate(-205%);
+        }
+
+        70% {
+            transform: translate(-307%);
+        }
+
+        100% {
+            transform: translate(-307%);
+        }
+    }
+
+    /* 2s */
+    @keyframes carrossel_b {
+        0% {
+            transform: translate(-307%);
+        }
+
+        90% {
+            transform: translate(-410.8%);
+        }
+
+        100% {
+            transform: translate(-410.8%);
+        }
+    }
+
+
+
+
+    /* Rodapé */
+    footer {
+        margin-top: 50vh;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    nav {
+        padding: 0 10px;
+    }
+
+    .logo {
+        position: relative;
+        left: 0;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .aside_1 {
+        width: 90%;
+        height: 35vh;
+        left: 5%;
+        margin-top: 10px;
+    }
+    .aside_1 div {
+        width: 100%;
+        height: 30vh;
+        margin: 0 auto;
+    }
+    .aside_1 section {
+        width: 100%;
+        height: 35vh;
+        border-width: 0.5vw;
+    }
+    
+    .P_other-side {
+        width: 100%;
+        font-size: 3vw;
+        margin: 5vh auto;
+    }
+    
+    #titulo-boas-vindas {
+        font-size: 12vw;
+    }
+    
+    .button_P_CC {
+        max-width: 100%;
+        width: 90%;
         padding: 10px;
     }
+    
+    /* .carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
+        width: 90%;
+        margin: 1vh auto;
+    }
+    
+    .carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2 {
+        font-size: 4vw;
+    }
+    
+    .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p {
+        width: 80%;
+        margin: 0 auto;
+        padding: 0.5rem;
+        font-size: 3vw;
+    } */
+    
+    .card {
+        width: 90%;
+        margin: 10px auto;
+        padding: 15px;
+    }
+    
+    .destaque-container {
+        width: 100%;
+        height: auto;
+    }
+    
+    .destaque-container img {
+        margin-left: 0;
+        height: auto;
+    }
+    
+    footer {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
 }
+
+
+
 
 /* PAGINA DE DESTAQUES */
 .card{
@@ -464,8 +741,8 @@ label {
     border-radius: 3px;
     margin-top: 12px;
 }
-
 /* FIM SEÇÃO DE CSS PAG DE DESTAQUES */
+
 
 /* FOOTER DAS PAGINAS */
 footer {
@@ -473,54 +750,11 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem;
-    background-color: var(--bg-color-01);
+    padding: 1rem;
+    background-color: var(--bg-color-04);
+    position: relative;
+    margin-top: 5vh;
 }
 /* FIM DO FOOTER */
 
-
-/* Responsividade página */
-@media screen and (max-width: 768px) {
-    /* barra de navegação */
-    .logo{
-        padding: 0 0 0 30%;
-    }
-    #menu {
-        display: none;
-    }
-    #menu-botao {
-        display: block;
-        width: 100%;
-        background-color: var(--bg-color-03);
-    }
-    #imgbotao{
-        width: 30px;
-        height: auto;
-    }
-
-    /* página principal */
-    .P-text_boas-vindas {
-        max-width: 350px;
-    }
-
-    /* página de destaques */
-    .card {
-        max-width: 350px;
-    }
-    #imgdestaque1 {
-        width: 250px;
-        height: auto;
-        margin: auto;
-    }
-    #imgdestaque2 {
-        width: 280px;
-        height: auto;
-        margin: auto;
-    }
-    #imgdestaque3 {
-        width: 280px;
-        height: auto;
-        margin: auto;
-    }
-}
 
