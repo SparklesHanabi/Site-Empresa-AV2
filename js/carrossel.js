@@ -12,7 +12,7 @@ elementos.forEach((elemento) => {
       elemento.style.animation = "none";
       void elemento.offsetHeight;
       elemento.style.animation = "carrossel_b 2.2s ease forwards";
-      console.log("Carrossel A terminou; iniciando Carrossel B");
+      //console.log("Carrossel A terminou; iniciando Carrossel B");
 
     } else if (e.animationName === "carrossel_b") {
       // Reinicia a animação carrossel_a
@@ -20,7 +20,7 @@ elementos.forEach((elemento) => {
       elemento.style.animation = "none";
       void elemento.offsetHeight;
       elemento.style.animation = "carrossel_a 19s ease forwards";
-      console.log("Carrossel B terminou; iniciando Carrossel A");
+      //console.log("Carrossel B terminou; iniciando Carrossel A");
     }
   });
 });
