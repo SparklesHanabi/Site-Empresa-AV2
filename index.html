@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[TITULO SITE CAFETERIA]</title>
+    <title>The Coding Cup</title>
     <!-- Icones -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Conexão ao CSS -->
@@ -23,29 +23,75 @@
             </div>
 
             <ul id="menu">
-                <a href="index.html" class="navButtom">Início</a>
-                <a href="destaque.html" class="navButtom">Destaques</a>
-                <a href="about.html" class="navButtom">Sobre Nós</a>
-                <a href="news.html" class="navButtom">Novidades</a>
-                <a href="contact.html" class="navButtom">Fale Conosco</a>
+                <li><a href="index.html" class="navButtom">Início</a></li>
+                <li><a href="destaque.html" class="navButtom">Destaques</a></li>
+                <li><a href="about.html" class="navButtom">Sobre Nós</a></li>
+                <li><a href="news.html" class="navButtom">Novidades</a></li>
+                <li><a href="contact.html" class="navButtom">Fale Conosco</a></li>
             </ul>
         </nav>
         <button id="menu-botao" onclick="acaoBotao()"><img src="image/icones/menu.png" alt="" id="imgbotao"></button>
     </header>
     
     <main class="main_p">
-    <aside class="aside_1">
-        <div class="carrosel_element_0" style="background-color: blue;"></div> <!--Colocar o mesmo conteudo do "carrosel_element_3"-->
-        <div class="carrosel_element_1">
-            <img src="image/destaque/barista.jpg" class="carrossel_img_1">
-            <h2>Nova Loja!</h2>
-            <p>Saiba mais!</p>
-        </div>
-        <div class="carrosel_element_2"></div>
-        <div class="carrosel_element_3"></div>
-        <div class="carrosel_element_0" style="background-color: blue;"></div> <!--Colocar o mesmo conteudo do "carrosel_element_1"-->
-        <div class="carrosel_element_0" style="background-color: red;"></div> <!--Apagar depois que as animações estiverem feitas-->
-    </aside>
+        <aside class="aside_1">
+
+            <div class="carrosel_element_0">
+                <!--Mesmo conteudo do "carrosel_element_3"-->
+                <img src="image/index/close-up-coffee-cup-counter.jpg" class="carrossel_img_3">
+                <h2>Express-Code?</h2>
+                <p>Porque não um <b>café expresso?</b></p>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+            <div class="carrosel_element_1">
+                <img src="image/index/outdoor-seating-restaurant.jpg" class="carrossel_img_1">
+                <h2>Nova Loja!</h2>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+            <div class="carrosel_element_2">
+                <img src="image//index/front-view-still-life-hot-water-composition.jpg" class="carrossel_img_2">
+                <h2>Mais Café!</h2>
+                <p>Peça um <b>Café+</b> e desfrute do sabor de um café verdadeiramente forte!</p>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+            <div class="carrosel_element_3">
+                <img src="image/index/close-up-coffee-cup-counter.jpg" class="carrossel_img_3">
+                <h2>Express-Code?</h2>
+                <p>Porque não um <b>café expresso?</b></p>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+            <div class="carrosel_element_1">
+                <!--Mesmo conteudo do "carrosel_element_1"-->
+                <img src="image/index/outdoor-seating-restaurant.jpg" class="carrossel_img_1">
+                <h2>Nova Loja!</h2>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+            <div class="carrosel_element_2">
+                <!--Mesmo conteudo do "carrosel_element_2"-->
+                <img src="image//index/front-view-still-life-hot-water-composition.jpg" class="carrossel_img_2">
+                <h2>Mais Café!</h2>
+                <p>Peça um <b>Café+</b> e desfrute do sabor de um café verdadeiramente forte!</p>
+                <a href="about.html">
+                    <p class="p1_buttom">Saiba mais!</p>
+                </a>
+            </div>
+
+        </aside>
 
         <section class="P_other-side">
             <div class="P-text_boas-vindas">
@@ -65,6 +111,8 @@
     <footer>
         <p>&copy; Site desenvolvido por Coding Cup</p>
     </footer>
+    
+    <!-- Conexão JavaScript -->
     <script src="js/carrossel.js"></script>
     <script src="js/menu.js"></script>
 </body>
