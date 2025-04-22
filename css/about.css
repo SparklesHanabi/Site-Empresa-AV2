@@ -6,10 +6,30 @@ main{
     margin: auto;
 }
 
+/* titulo da pagina */
+.titulo_historia{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #D9C58B ;
+    background-color: #8c5230 ;
+    padding-bottom: 60px ;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
 /* essa parte é da historia da cafeteria */
 /* titulo */
+.titulo_especial{
+    display: block;
+    font-size: 37px;
+}
 #about h2 {
-    color: white;
+    color: #ffffff;
+    font-family: Allura	;
+    text-align: center;
+    margin-bottom: 10px;
+    
 }
 
 /* texto */
@@ -22,7 +42,6 @@ main{
     text-align: justify;
     word-spacing: 2px;
     border: 2px solid black;
-    
     border-radius: 5px;
 }
 
@@ -31,17 +50,13 @@ main{
 }
 
 /* essa parte é o endereço das lojas */
-/* container das div loja  */
+
 #todas_lojas{
-    background-color: rgba(0, 0, 0, 0.5); /* cor temporaria*/
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    
     padding-bottom: 50px; 
-    margin-top: 30px;
+    margin-top: 30px;   
 }
+
 
 #todas_lojas h2, p{
     color: white;
@@ -49,8 +64,19 @@ main{
 }
 
 #titulo_todas_lojas{
-    width: 310px;
+    text-align: center;
+    width: 100%;
     height: 30px;
+    margin-bottom: 20px;
+    
+}
+/* container das div loja  */
+#conteiner_das_lojas{
+    color: aqua;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+
 }
 /* div loja */
 .loja{
@@ -58,6 +84,8 @@ main{
     max-width: 275px;
     background-color: rgba(161, 113, 10, 0.589); /* cor temporaria*/
     padding: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .loja img{
