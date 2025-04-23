@@ -9,7 +9,7 @@ $email = $_POST['email'];
 $mensagem = $_POST['mensagem'];
 
 // Salva no arquivo
-$linha = fopen("catalogos.txt", "a");
+$linha = fopen("catalogo.txt", "a");
 fwrite($linha, "Nome: $nome\nEmail: $email\nMensagem: $mensagem\n---\n");
 fclose($linha);
 
