@@ -393,6 +393,9 @@ nav ul li:active {
 @media screen and (max-width: 768px) {
 
     /* Barra de Navegação */
+    body {
+        overflow: hidden;
+    }
     .logo {
         padding: 0;
     }
@@ -417,7 +420,7 @@ nav ul li:active {
     }
 
     .navButtom {
-        font-size: 0.7em;
+        font-size: 0.9em;
     }
 
 
@@ -427,7 +430,7 @@ nav ul li:active {
     }
 
     .title_nav_text, .title_nav_text_CC {
-        font-size: 4vw;
+        font-size: 1.1em;
         font-weight: 700;
     }
 
@@ -436,18 +439,18 @@ nav ul li:active {
     }
 
     .logo a .title_nav_text:nth-child(2) {
-        width: 1.8em;
+        width: 1.5em;
     }
 
     .logo a .title_nav_text:nth-child(4) {
-        width: 3.3em;
+        width: 3.1em;
     }
 
     .logo a .title_nav_text:nth-child(6) {
         width: 1.5em;
     }
 
-    /* .logo a:hover .title_nav_text:nth-child(1) {
+    .logo a:hover .title_nav_text:nth-child(1) {
         width: 1.5vw;
         overflow: hidden;
     }
@@ -465,7 +468,7 @@ nav ul li:active {
     .logo a:hover .title_nav_text:nth-child(6) {
         width: 4vw;
         overflow: hidden;
-    } */
+    }
 
 
 
@@ -617,6 +620,16 @@ nav ul li:active {
     #imgdestaque3 {
         width: 280px;
         height: auto;
+        margin: auto;
+    }
+
+    /* página about */
+    #conteiner_das_lojas {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .loja {
         margin: auto;
     }
 
