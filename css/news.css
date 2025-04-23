@@ -2,78 +2,194 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
-main {
-    max-width: 1000px;
-    margin: auto;
-    background-color: #D9C58B;
-    border-radius: 20px;
-    padding: 40px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+
+/* Titulo */
+.title {
+    margin: 6ch 10ch 14ch 10ch;
 }
 
-main h1 {
-    color: #8C5230;
-    text-align: center;
-    font-size: 2em;
-}
-
-.novidade {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.novidade.destaque .descricao {
-    background-color: #65321D;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-.descricao p {
+.title h1 {
     color: #D9C58B;
-    font-size: 1.2em;
+    text-align: center;
+    font-size: min(6ch, 6vw);
+}
+
+
+
+/* Elementos da Página */
+.card_elements {
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 10ch;
+    background-color: #D9C58B;
+    border-radius: 4ch;
+    padding: 2ch;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+/* Cards de Novidade - todos */
+.novidade_01 img, .novidade_02 img, .novidade_03 img {
+    width: 100%;
+    border-radius: 3ch;
+    box-shadow: 0 0 7px #a67041;
+}
+
+.novidade_01, .novidade_02, .novidade_03 {
+    overflow: hidden;
+}
+
+.descricao {
+    color: #D9C58B;
+    font-size: 1ch;
     font-weight: 500;
     line-height: 1.6;
+    padding: 2ch;
 }
 
-.img-destaque {
-    width: 100%;
-    border-radius: 15px;
+
+
+/* Card(novidade) - 1 */
+.novidade_01 .descricao {
+    background-color: #65321D;
+    border-radius: 3ch;
+    margin-top: 1ch;
+
 }
 
-.grupo-tortas {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    flex-wrap: wrap;
+.novidade_01 {
+    margin-bottom: 15ch;
 }
 
-.item {
+.descricao h1 {
+    font-size: 4ch;
+    margin-bottom: 1ch;
+    color: #ebe1d4;
+}
+
+
+
+/* Card(novidade) - 2 e 3 */
+.novidade_02 {
+    margin-bottom: 8ch;
+}
+
+.novidade_02, .novidade_03 {
     background-color: #a67041;
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 400px;
+    border-radius: 3.5ch;
+    padding: 1.5ch;
     display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
 }
 
-.item p {
+.novidade_02 img, .novidade_03 img {
+    height: 50%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.novidade_02 .descricao p, .novidade_03 .descricao p {
     color: #fff5e6;
-    font-size: 1.1em;
-    text-align: center;
-    font-weight: 600;
+    font-size: 2.8ch;
+    font-weight: 500;
 }
 
-.img-torta {
-    width: 100%;
-    border-radius: 10px;
+.descricao h2 {
+    font-size: 4ch;
+    margin-bottom: 2ch;
+    color: #fff5e6;
+}
+
+.descricao em {
+    color: #d8c898;
+}
+
+
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+
+    /* Titulo */
+    .title {
+        margin: 6ch 1ch 14ch 1ch;
+    }
+    
+    .title h1 {
+        font-size: min(7ch, 7vw);
+    }
+
+
+
+    /* Elementos da Página */
+    .card_elements {
+        max-width: 90%;
+        border-radius: 2.8ch;
+        padding: 1ch;
+    }
+
+
+
+    /* Cards de Novidade - todos */
+    .novidade_01 img, .novidade_02 img, .novidade_03 img {
+        width: 100%;
+        border-radius: 1.8ch;
+    }
+
+    .descricao {
+        color: #D9C58B;
+        font-size: 1ch;
+        font-weight: 500;
+        line-height: 1.6;
+        padding: 2ch;
+    }
+
+
+    
+    /* Card(novidade) - 1 */
+    .novidade_01 .descricao {
+        background-color: #65321D;
+        border-radius: 3ch;
+        margin-top: 1ch;
+
+    }
+
+    .novidade_01 {
+        margin-bottom: 15ch;
+    }
+
+    .descricao h1 {
+        font-size: 3.3ch;
+    }
+
+
+
+    /* Card(novidade) - 2 e 3 */
+    .novidade_02 {
+        margin-bottom: 8ch;
+    }
+
+    .novidade_02, .novidade_03 {
+        border-radius: 2.8ch;
+        padding: 1.5ch;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .novidade_02 img, .novidade_03 img {
+        width: 100%;
+    }
+
+    .novidade_02 .descricao p, .novidade_03 .descricao p {
+        font-size: 2.5ch;
+    }
+
+    .descricao h2 {
+        font-size: 3.3ch;
+    }
 }

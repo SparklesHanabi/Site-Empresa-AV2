@@ -23,7 +23,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: poppins;
+    font-family: poppins, Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: var(--text-color)
 }
@@ -71,7 +71,7 @@ nav ul li a {
     cursor: pointer;
     margin-left: 3vw;
     text-decoration: none;
-    font-size: 1.4ch;
+    font-size: clamp(1.2vw, 1.4ch, 1.4vw);
 }
 
 nav ul li:hover {
@@ -326,11 +326,6 @@ nav ul li:active {
 }
 
 .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p, .carrosel_element_0 p {
-    /* margin: 0vw 2vw 0vh 2vw;
-    padding: 0.5vw;
-    font-size: 1.5ch; */
-
-    /* width: 90%; */
     padding-left: 3.5ch;
     padding-right: 1ch;
     font-size: 1.2ch;
@@ -439,13 +434,14 @@ nav ul li:active {
 
 
     .logo a img {
+        padding-top: 0.4ch;
         width: 3.8ch;
         height: auto;
     }
 
     .title_nav_text, .title_nav_text_CC {
         padding-top: 0.4ch;
-        font-size: 2.5ch;
+        font-size: 1.8ch;
         font-weight: 700;
     }
 
@@ -458,15 +454,15 @@ nav ul li:active {
     }
 
     .logo a .title_nav_text:nth-child(2) {
-        width: 2.4ch;
+        width: 2.3ch;
     }
 
     .logo a .title_nav_text:nth-child(4) {
-        width: 5ch;
+        width: 4.8ch;
     }
 
     .logo a .title_nav_text:nth-child(6) {
-        width: 2.2ch;
+        width: 2.1ch;
     }
 
     .logo a:hover .title_nav_text:nth-child(1) {
@@ -475,17 +471,17 @@ nav ul li:active {
     }
 
     .logo a:hover .title_nav_text:nth-child(2) {
-        width: 2.4ch;
+        width: 2.3ch;
         overflow: hidden;
     }
 
     .logo a:hover .title_nav_text:nth-child(4) {
-        width: 5ch;
+        width: 4.8ch;
         overflow: hidden;
     }
 
     .logo a:hover .title_nav_text:nth-child(6) {
-        width: 2.2ch;
+        width: 2.1ch;
         overflow: hidden;
     }
 
@@ -524,7 +520,7 @@ nav ul li:active {
         /* height: 100vh; */
         height: 40ch;
         padding-left: 4vw;
-        left: 6.5vw;
+        left: 7.5vw;
     }
 
     .carrosel_element_0 {
