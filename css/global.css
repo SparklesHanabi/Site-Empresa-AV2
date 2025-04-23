@@ -397,6 +397,10 @@ nav ul li:active {
         padding: 0;
     }
 
+    .title_nav_text {
+        font-size: 1.3vw;
+    }
+
     #menu {
         display: none;
     }
@@ -411,62 +415,64 @@ nav ul li:active {
         width: 30px;
         height: auto;
     }
-    
+
+    .navButtom {
+        font-size: 0.7em;
+    }
+
 
     .logo a img {
-        width: 4vw;
-        height: 4vw;
-        margin-top: 2.2vh;
+        width: 25px;
+        height: auto;
     }
 
     .title_nav_text, .title_nav_text_CC {
-        font-size: 2.5vw;
+        font-size: 4vw;
         font-weight: 700;
-        padding-top: 2.2vh;
     }
 
     .logo a .title_nav_text:nth-child(1) {
-        width: 1.5vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(2) {
-        width: 3.8vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(4) {
-        width: 7.8vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(6) {
-        width: 4vw;
+        width: 0.6em;
     }
 
-    .logo a:hover .title_nav_text:nth-child(1) {
+    .logo a .title_nav_text:nth-child(2) {
+        width: 1.8em;
+    }
+
+    .logo a .title_nav_text:nth-child(4) {
+        width: 3.3em;
+    }
+
+    .logo a .title_nav_text:nth-child(6) {
+        width: 1.5em;
+    }
+
+    /* .logo a:hover .title_nav_text:nth-child(1) {
         width: 1.5vw;
         overflow: hidden;
     }
-    
+
     .logo a:hover .title_nav_text:nth-child(2) {
         width: 3.8vw;
         overflow: hidden;
     }
-    
+
     .logo a:hover .title_nav_text:nth-child(4) {
         width: 7.8vw;
         overflow: hidden;
     }
-    
+
     .logo a:hover .title_nav_text:nth-child(6) {
         width: 4vw;
         overflow: hidden;
-    }
+    } */
 
 
 
 
-    
 
-    
+
+
 
     /* Pagina de Index */
     .main_p {
@@ -517,11 +523,11 @@ nav ul li:active {
         object-fit: cover;
         object-position: center;
     }
-    
+
     .carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2 {
         font-size: 4vw;
     }
-    
+
     .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p {
         width: 90%;
         padding-left: 5vw;
@@ -591,7 +597,28 @@ nav ul li:active {
         }
     }
 
+    /* página de  destaques */
+    .card {
+        max-width: 350px;
+    }
 
+    #imgdestaque1 {
+        width: 280px;
+        height: auto;
+        margin: auto;
+    }
+
+    #imgdestaque2 {
+        width: 280px;
+        height: auto;
+        margin: auto;
+    }
+
+    #imgdestaque3 {
+        width: 280px;
+        height: auto;
+        margin: auto;
+    }
 
 
     /* Rodapé */
@@ -601,111 +628,6 @@ nav ul li:active {
 
 }
 
-
-
-
-
-@media screen and (max-width: 600px) {
-
-    .logo a img {
-        width: 5vw;
-        height: 5vw;
-        margin-top: 1vh;
-    }
-
-    .title_nav_text, .title_nav_text_CC {
-        font-size: 3.5vw;
-        font-weight: 700;
-        padding-top: 1vh;
-    }
-
-    .logo a .title_nav_text:nth-child(1) {
-        width: 2vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(2) {
-        width: 5.5vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(4) {
-        width: 11.2vw;
-    }
-    
-    .logo a .title_nav_text:nth-child(6) {
-        width: 5vw;
-    }
-
-    .logo a:hover .title_nav_text:nth-child(1) {
-        width: 2vw;
-        overflow: hidden;
-    }
-    
-    .logo a:hover .title_nav_text:nth-child(2) {
-        width: 5.5vw;
-        overflow: hidden;
-    }
-    
-    .logo a:hover .title_nav_text:nth-child(4) {
-        width: 11.2vw;
-        overflow: hidden;
-    }
-    
-    .logo a:hover .title_nav_text:nth-child(6) {
-        width: 5vw;
-        overflow: hidden;
-    }
-
-
-
-
-    /* Pagina de Index */
-    
-    .main_p {
-        flex-direction: column-reverse;
-    }
-
-    .aside_1 {
-        width: 85%;
-        height: 100vh;
-        left: 6.5vw;
-        padding-left: 9vw;
-    }
-
-    .aside_1 div {
-        border-radius: 6vw;
-    }
-
-    .carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
-        border-radius: 3vw;
-    }
-
-    .button_P_CC {
-        margin-bottom: 10vh;
-    }
-
-
-
-
-    .card {
-        width: 90%;
-        margin: 10px auto;
-        padding: 15px;
-    }
-    
-    .destaque-container {
-        width: 100%;
-        height: auto;
-    }
-    
-    .destaque-container img {
-        margin-left: 0;
-        height: auto;
-    }
-
-    footer p {
-        font-size: 60%;
-    }
-}
 
 
 
@@ -735,7 +657,7 @@ nav ul li:active {
     font-size: 30px;
 }
 .destaque-container {
-    
+
     width: 400px;
     height: 250px;
     overflow: hidden;
@@ -750,7 +672,7 @@ nav ul li:active {
 /* CARD DE CAFÉ */
 #ch {
     display: none;
-    
+
 }
 label {
     transition: scale 70ms ease;

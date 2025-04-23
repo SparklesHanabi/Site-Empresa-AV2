@@ -9,7 +9,7 @@ function acaoBotao() {
         menu.style.display = "flex";
         menu.style.flexDirection = "column";
         menu.style.gap = '10px';
-        logo.style.paddingLeft = "0%";
+        logo.style.paddingRight = "50px";
         menuVisivel = true;
     } else {
         menu.style.display = "none";
