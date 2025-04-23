@@ -71,7 +71,7 @@ nav ul li a {
     cursor: pointer;
     margin-left: 3vw;
     text-decoration: none;
-    font-size: max(1.5vw, 10%);
+    font-size: 1.4ch;
 }
 
 nav ul li:hover {
@@ -320,22 +320,37 @@ nav ul li:active {
 
 /* Conteúdo do Carrossel */
 .carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2, .carrosel_element_0 h2 {
-    padding: 0vw 2vw 2vh 2vw;
-    font-size: 2vw;
+    padding: 0vw 2vw 0.5ch 0.4vw;
+    font-size: 2.3ch;
+    margin-left: 1ch;
 }
 
 .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p, .carrosel_element_0 p {
-    margin: 0vw 2vw 0vh 2vw;
+    /* margin: 0vw 2vw 0vh 2vw;
     padding: 0.5vw;
-    font-size: max(1.5vw, 10%);
+    font-size: 1.5ch; */
+
+    /* width: 90%; */
+    padding-left: 3.5ch;
+    padding-right: 1ch;
+    font-size: 1.2ch;
 }
 
-.carrosel_element_1 b, .carrosel_element_2 b, .carrosel_element_3 b, .carrosel_element_0 b {
-    font-size: max(1.5vw, 10%);
+.carrosel_element_1 p b, .carrosel_element_2 p b, .carrosel_element_3 p b, .carrosel_element_0 p b {
+    font-size: 1.7ch;
 }
 
 .carrosel_element_1 a, .carrosel_element_2 a, .carrosel_element_3 a, .carrosel_element_0 a {
     text-decoration-line: none;
+}
+
+.carrosel_element_1 a p, .carrosel_element_2 a p, .carrosel_element_3 a p, .carrosel_element_0 a p {
+    padding-left: 0;
+    padding-right: 0;
+    width: 80%;
+    margin: auto;
+    margin-top: 1.5ch;
+    border-radius: 1.2ch;
 }
 
 .carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
@@ -343,7 +358,7 @@ nav ul li:active {
     width: 90%;
     object-fit: cover;
     object-position: center;
-    margin: 3vh 0vw 2vh 1.5vw;
+    margin: 2vh 0vw 1vh 1.5vw;
     border-radius: 1vw;
     border: #261717 solid 0.2vw;
 }
@@ -393,15 +408,10 @@ nav ul li:active {
 @media screen and (max-width: 768px) {
 
     /* Barra de Navegação */
-    body {
-        overflow: hidden;
-    }
+
     .logo {
         padding: 0;
-    }
-
-    .title_nav_text {
-        font-size: 1.3vw;
+        overflow: hidden;
     }
 
     #menu {
@@ -419,60 +429,65 @@ nav ul li:active {
         height: auto;
     }
 
+    nav {
+        min-height: 7ch;
+    }
+
     .navButtom {
         font-size: 0.9em;
     }
 
 
     .logo a img {
-        width: 25px;
+        width: 3.8ch;
         height: auto;
     }
 
     .title_nav_text, .title_nav_text_CC {
-        font-size: 1.1em;
+        padding-top: 0.4ch;
+        font-size: 2.5ch;
         font-weight: 700;
     }
 
+    nav div a {
+        max-width: 95vmin;
+    }
+
     .logo a .title_nav_text:nth-child(1) {
-        width: 0.6em;
+        width: 1ch;
     }
 
     .logo a .title_nav_text:nth-child(2) {
-        width: 1.5em;
+        width: 2.4ch;
     }
 
     .logo a .title_nav_text:nth-child(4) {
-        width: 3.1em;
+        width: 5ch;
     }
 
     .logo a .title_nav_text:nth-child(6) {
-        width: 1.5em;
+        width: 2.2ch;
     }
 
     .logo a:hover .title_nav_text:nth-child(1) {
-        width: 1.5vw;
+        width: 1ch;
         overflow: hidden;
     }
 
     .logo a:hover .title_nav_text:nth-child(2) {
-        width: 3.8vw;
+        width: 2.4ch;
         overflow: hidden;
     }
 
     .logo a:hover .title_nav_text:nth-child(4) {
-        width: 7.8vw;
+        width: 5ch;
         overflow: hidden;
     }
 
     .logo a:hover .title_nav_text:nth-child(6) {
-        width: 4vw;
+        width: 2.2ch;
         overflow: hidden;
     }
-
-
-
-
 
 
 
@@ -481,10 +496,6 @@ nav ul li:active {
     .main_p {
         flex-direction: column-reverse;
         overflow: hidden;
-    }
-
-    .button_P_CC {
-        margin-bottom: 10vh;
     }
 
     .P_other-side {
@@ -500,63 +511,55 @@ nav ul li:active {
     }
 
     .button_P_CC {
-        font-size: max(3vw, 10%);
-        width: 42vw;
+        font-size: 1.5ch;
+        width: 22ch;
+        margin-bottom: 1ch;
+        padding: 0.5ch 1ch;
+        border-radius: 1.2ch;
     }
 
     /* Carrossel */
     .aside_1 {
         width: 85%;
-        height: 100vh;
+        /* height: 100vh; */
+        height: 40ch;
+        padding-left: 4vw;
         left: 6.5vw;
-        padding-left: 7vw;
+    }
+
+    .carrosel_element_0 {
+        margin-left: 5vw;
     }
 
     .aside_1 div {
         left: auto;
         right: auto;
-        width: 90%;
-        height: 90%;
+        width: 85%;
+        height: 80%;
+        border-radius: 2ch;
     }
+
+    /* Esquerda e Direita respectivamente */
+    .aside_1::before, .aside_1::after {
+        display: none;
+      }
 
     .carrossel_img_1, .carrossel_img_2, .carrossel_img_3 {
         width: 93%;
         height: 50%;
-        margin: 3vh 0vw 2vh 2.5vw;
+        margin: 1ch 0vw 1ch 2.4vw;
+        border-radius: 1.5ch;
         object-fit: cover;
         object-position: center;
     }
 
     .carrosel_element_1 h2, .carrosel_element_2 h2, .carrosel_element_3 h2 {
-        font-size: 4vw;
+        font-size: 1.5ch;
     }
 
     .carrosel_element_1 p, .carrosel_element_2 p, .carrosel_element_3 p {
-        width: 90%;
-        padding-left: 5vw;
-        padding-right: 5vw;
-        font-size: 3vw;
+        font-size: 1ch;
     }
-
-    .carrosel_element_1 a p, .carrosel_element_2 a p, .carrosel_element_3 a p {
-        width: 50%;
-        margin-left: 5vw;
-    }
-
-    .carrosel_element_1 b, .carrosel_element_2 b, .carrosel_element_3 b, .carrosel_element_0 b {
-        font-size: max(3vw, 10%);
-    }
-
-
-
-
-
-
-
-
-
-
-
 
     /* 19s */
     @keyframes carrossel_a {
@@ -600,24 +603,13 @@ nav ul li:active {
         }
     }
 
+
     /* página de  destaques */
     .card {
         max-width: 350px;
     }
 
-    #imgdestaque1 {
-        width: 280px;
-        height: auto;
-        margin: auto;
-    }
-
-    #imgdestaque2 {
-        width: 280px;
-        height: auto;
-        margin: auto;
-    }
-
-    #imgdestaque3 {
+    #imgdestaque1, #imgdestaque2, #imgdestaque3 {
         width: 280px;
         height: auto;
         margin: auto;
@@ -631,12 +623,6 @@ nav ul li:active {
     }
     .loja {
         margin: auto;
-    }
-
-
-    /* Rodapé */
-    footer {
-        margin-top: 50vh;
     }
 
 }
@@ -740,13 +726,15 @@ label {
 /* FOOTER DAS PAGINAS */
 footer {
     display: flex;
-    flex-direction: row;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
     padding: 1rem;
     background-color: var(--bg-color-04);
-    position: relative;
-    margin-top: 5vh;
+}
+
+footer p {
+    font-size: 1.2ch;
 }
 /* FIM DO FOOTER */
 
