@@ -5,11 +5,15 @@
 }
 
 
-body {
-    background-image: url(../image/icones/cafecomp.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
+
+/* Imagem de Fundo da Pagina */
+.fundo_img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    max-height: 630px;
     object-fit: cover;
+    overflow: hidden;
 }
 
 
@@ -48,6 +52,7 @@ main {
     padding: 1ch;
     color: #d8c898;
     background-color: rgba(166, 112, 65, 0.550);
+    max-width: 90%;
     width: 30ch;
     height: 45ch;
     border-radius: 1.8ch;
@@ -152,5 +157,10 @@ label {
         font-size: 3ch;
     }
 
+    .fundo_img {
+        max-height: none;
+        height: 150ch;
+        width: 100%;
+    }
 }
 

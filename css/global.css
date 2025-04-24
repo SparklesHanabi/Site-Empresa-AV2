@@ -338,6 +338,11 @@ nav ul li:active {
     border: #261717 solid 0.2vw;
 }
 
+.carrossel_img_2 {
+    object-fit: cover;
+    object-position: bottom;
+}
+
 .p1_buttom {
     margin: 0vw 2vw 2vh 2vw;
     background-color: var(--main-color);

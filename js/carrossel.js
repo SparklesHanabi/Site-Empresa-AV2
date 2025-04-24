@@ -11,7 +11,7 @@ elementos.forEach((elemento) => {
 
       elemento.style.animation = "none";
       void elemento.offsetHeight;
-      elemento.style.animation = "carrossel_b 2.2s ease forwards";
+      elemento.style.animation = "carrossel_b 2s ease forwards";
       //console.log("Carrossel A terminou; iniciando Carrossel B");
 
     } else if (e.animationName === "carrossel_b") {

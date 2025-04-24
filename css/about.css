@@ -81,7 +81,7 @@ body {
     background-color: #a6704180;
     border-radius: 2ch;
     border: 0.1ch solid black;
-    backdrop-filter: blur(8px) brightness(150%);
+    backdrop-filter: blur(9px) brightness(160%);
     padding-top: 3ch;
     margin-bottom: 3ch;
 }
