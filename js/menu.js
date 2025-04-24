@@ -26,7 +26,6 @@ window.addEventListener("resize", function () {
         menu.style.display = "flex";
         menu.style.flexDirection = "row";
         menu.style.gap = "";
-        logo.style.paddingLeft = "";
-        menuVisivel = false;
+        logo.style.paddingLeft = "";x
     }
 });

@@ -8,7 +8,7 @@
 
 /* Titulo */
 .title {
-    margin: 6ch 10ch 8ch 10ch;
+    margin: 5ch 10ch 8ch 15ch;
 }
 
 .title h1 {
@@ -21,7 +21,7 @@
 
 /* Elementos da Página */
 .card_elements {
-    max-width: 60%;
+    max-width: 90%;
     margin: auto;
     margin-bottom: 10ch;
     background-color: #D9C58B;
