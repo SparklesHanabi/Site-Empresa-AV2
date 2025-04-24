@@ -1,112 +1,178 @@
-/* imagem de fundo  */
-main{
-    background-image: url(../image/sobre_nos/fundocafeteria.jpg);
-    background-size: cover;
-    
-    margin: auto;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-/* titulo da pagina */
-.titulo_historia{
-    width: 100%;
-    height: 40px;
-    text-align: center;
-    color: #D9C58B ;
-    background-color: #8c5230 ;
-    padding-bottom: 60px ;
-    font-size: 35px;
-    margin-bottom: 10px;
+
+
+/* imagem de fundo */
+body {
+    background-image: url(../image/sobre_nos/fundocafeteria.jpg);
+    background-size: cover;
 }
+
+
+
+/* Titulo Principal */
+.titulo_historia {
+    width: 100%;
+    height: 2ch;
+    text-align: center;
+    color: #f3e4b6;
+    background-color: #8c5230;
+    padding-bottom: 2.5ch;
+    font-size: 3ch;
+    margin-bottom: 3ch;
+}
+
+
 
 /* essa parte é da historia da cafeteria */
 /* titulo */
-.titulo_especial{
+.titulo_especial {
     display: block;
-    font-size: 37px;
+    font-size: 3ch;
+    -webkit-text-stroke: unset;
+    color: #f3e4b6;
 }
+
 #about h2 {
-    color: #ffffff;
-    font-family: Allura	;
+    padding: 0;
+    color: #f3e4b6;
     text-align: center;
-    margin-bottom: 10px;
-    
+    margin-bottom: 3ch;
 }
+
+
 
 /* texto */
 #about {
-    padding: 10px;
+    padding: 3ch;
     max-width: 700px;
-    margin: auto;  
-    background-color:rgba(166, 112, 65, 0.85);
+    margin: auto;
+    margin-bottom: 8ch;
+    background-color:#a67041C0;
+    backdrop-filter: blur(8px) brightness(50%);
     text-indent: 30px;
     text-align: justify;
     word-spacing: 2px;
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 0.1ch solid black;
+    border-radius: 2ch;
 }
 
 #about p {
     color: white; 
 }
 
+#about span {
+    text-indent: 0;
+}
+
+
+
 /* essa parte é o endereço das lojas */
-
-#todas_lojas{
-    
-    padding-bottom: 50px; 
-    margin-top: 30px;   
+#todas_lojas {
+    margin: auto;
+    padding-bottom: 6ch;
+    width: min(60ch, 90%);
+    background-color: #a6704180;
+    border-radius: 2ch;
+    border: 0.1ch solid black;
+    backdrop-filter: blur(8px) brightness(150%);
+    padding-top: 3ch;
+    margin-bottom: 3ch;
 }
 
-
-#todas_lojas h2, p{
+#todas_lojas h2, main p {
     color: white;
-    
+    font-weight: 500;
 }
 
-#titulo_todas_lojas{
+#titulo_todas_lojas {
     text-align: center;
-    width: 100%;
-    height: 30px;
-    margin-bottom: 20px;
-    
+    font-size: 3ch;
+    font-weight: 600;
+    margin-bottom: 2ch;
 }
+
+
+
 /* container das div loja  */
-#conteiner_das_lojas{
-    color: aqua;
+#conteiner_das_lojas {
     display: flex;
-    gap: 100px;
+    gap: 7ch;
     justify-content: center;
-
 }
+
+
+
 /* div loja */
-.loja{
+.loja {
     text-align: center;
-    max-width: 275px;
+    max-width: 22ch;
     background-color: rgba(161, 113, 10, 0.589); /* cor temporaria*/
-    padding: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
+    padding: 1.5ch;
+    border: 0.1ch solid black;
+    border-radius: 1.5ch;
+    overflow: hidden;
 }
 
-.loja img{
-    padding-right: 12px;
-    height: 150px;
-    text-align: center;
-    width: 250px;
+.loja img {
+    border-radius: 0.5ch;
+    border: 0.1ch solid black;
+    width: 100%;
+    height: 13ch;
+    margin-bottom: 1ch;
 }
+
+
 
 @media screen and (max-width: 768px) {
-    main {
-        width: 100%;
-        min-height: 100vh;
-    }
     
     #about {
-        max-width: 400px;
+        max-width: 95%;
     }
+
+    #about p {
+        font-weight: 300;
+    }
+
+    .loja {
+        padding: 1ch;
+    }
+
+    #conteiner_das_lojas {
+        gap: 2ch;
+    }
+
     #todas_lojas {
-        margin-top: 30px;
-        padding: 20px;
-        padding-bottom: 50px;
-    } 
+        padding-bottom: 3.5ch;
+        width: min(30ch, 90%);
+        padding-top: 1.5ch;
+    }
+
+    #titulo_todas_lojas {
+        font-size: 2.5ch;
+        padding: 1ch;
+    }
+
+    .titulo_historia {
+        height: auto;
+        font-size: 2ch;
+        padding-bottom: 0.3ch;
+        font-weight: 500;
+    }
+
+    #about h2 span {
+        font-size: 2.8ch;
+    }
+
+    #about h2 {
+        font-weight: 500;
+    }
+
+    .titulo_especial {
+        font-size: 1ch;
+    }
 }
