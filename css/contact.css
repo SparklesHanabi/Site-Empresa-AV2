@@ -99,3 +99,9 @@ form button:hover {
     width: 24px;
     height: 24px;
 }
+
+@media screen and (max-width: 768px) {
+    .contato {
+        width: 90%;
+    }
+}
