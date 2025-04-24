@@ -5,21 +5,29 @@
 }
 
 
-
-/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
-.destaque-background {
+body {
     background-image: url(../image/icones/cafecomp.jpeg);
     background-repeat: no-repeat;
     background-position: center;
+    object-fit: cover;
 }
+
+
+/* SEÇÃO DE CSS TITULO DA PAG DE DESTAQUES */
+main {
+    display: flex;
+    justify-content: center;
+}
+
 .titulo-texto {
-    padding-top: 10px;
+    padding: 1ch;
     letter-spacing: 1px;
     text-align: center;
+    background-color: #65321D;
 }
-.titulo-texto h2, span{
-    font-size: 30px;
-    -webkit-text-stroke: 1.25px black;
+
+.titulo-texto h2, span {
+    font-size: 2.5ch;
 }
 
 #principal-destaque {
@@ -30,89 +38,89 @@
 
 #titulo-destaque {
     font-size: 2em;
-    margin: 20px;
+    margin: 2ch;
 }
 
 
 
 /* PAGINA DE DESTAQUES */
-.card{
+.card {
+    padding: 1ch;
+    color: #d8c898;
     background-color: rgba(166, 112, 65, 0.550);
-    width: 500px;
-    padding: 25px 30px;
-    border-radius: 10px;
-    border-top: 2px solid var(--bg-color-02);
-    border-left: 2px solid var(--bg-color-02);
-    border-right: 2px solid var(--bg-color-02);
-    border-bottom: 2px solid var(--bg-color-02) ;
+    width: 30ch;
+    height: 45ch;
+    border-radius: 1.8ch;
+    border: 0.2ch solid var(--bg-color-02);
     line-height: 1.7;
-    margin-top: 10px;
-    backdrop-filter: blur(10px);
-    margin: auto;
-
+    backdrop-filter: blur(10px) brightness(80%);
+    margin: 2ch 1ch 2ch 1ch;
+    overflow-y: auto;
+    scrollbar-width: none;
     z-index: 10;
 }
-.card h2 {
-    text-align: center;
-    font-size: 30px;
-}
-.destaque-container {
 
-    width: 400px;
-    height: 250px;
+.card h2 {
+    padding: 0.2ch 1ch 0 1ch;
+    text-align: center;
+    font-size: 2.5ch;
+    color: #e7d7a8;
+}
+
+.content0 {
+    padding: 1ch;
+}
+
+.content {
+    font-size: 1.5ch;
+    padding: 0ch 1ch 0ch 1ch;
+}
+
+.content label {
+    margin: 2ch 5ch 2ch 0ch;
+}
+
+.destaque-container {
+    display: flex;
+    justify-content: center;
     overflow: hidden;
 }
+
 .destaque-container img {
+    height: 18ch;
     width: 100%;
-    height: 100%;
-    margin-left: 25px;
     object-fit: cover;
+    border-radius: 1ch;
+    border: var(--bg-color-02) solid 0.2ch;
 }
 
 
 
 /* CARD DE CAFÉ */
-#ch {
-    display: none;
+/* CARD DE EMPREGADOS */
+/* CARD DE CONFORTO */
 
+#ch, #ch-emp, #ch-work {
+    display: none;
 }
+
 label {
-    transition: scale 70ms ease;
+    transition: scale 200ms ease;
 }
+
 label:hover {
     scale: 0.9;
 }
 
-#ch:checked ~ .content {
+#ch:checked ~ .content, #ch-emp:checked ~ .content, #ch-work:checked ~ .content {
     display: block;
 }
-#ch:checked ~ label {
+
+#ch:checked ~ label, #ch-emp:checked ~ label, #ch-work:checked ~ label {
     display: none;
 }
+
 .content {
-    display: none;
-}
-
-
-
-/* CARD DE EMPREGADOS */
-#ch-emp {
-    display: none;
-}
-#ch-emp:checked ~ .content {
-    display: block;
-}
-#ch-emp:checked ~ label {
-    display: none;
-}
-
-#ch-work {
-    display: none;
-}
-#ch-work:checked ~ .content {
-    display: block;
-}
-#ch-work:checked ~ label {
     display: none;
 }
 
@@ -121,9 +129,9 @@ label {
     cursor: pointer;
     color: antiquewhite;
     background-color: #232323;
-    padding: 3px 13px;
-    border-radius: 3px;
-    margin-top: 12px;
+    padding: 0.5ch 2ch;
+    border-radius: 1ch;
+    margin: 2ch 5ch 4ch 1ch;
 }
 /* FIM SEÇÃO DE CSS PAG DE DESTAQUES */
 
@@ -133,15 +141,16 @@ label {
 /* Responsividade */
 @media screen and (max-width: 768px) {
 
-        /* página de  destaques */
-        .card {
-            max-width: 350px;
-        }
-    
-        #imgdestaque1, #imgdestaque2, #imgdestaque3 {
-            width: 280px;
-            height: auto;
-            margin: auto;
-        }
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .titulo-texto h2 {
+        font-size: 3ch;
+    }
+
 }
 
